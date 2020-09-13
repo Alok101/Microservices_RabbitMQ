@@ -1,0 +1,11 @@
+Enable Rabbit MQ Command ->rabbitmq-plugins enable rabbitmq_management
+Default Port ->http://localhost:15672/
+
+Command Rabbit MQ
+--===============================================
+Stop->rabbitmqctl stop_app
+Start->rabbitmqctl start_app
+reset->rabbitmqctl reset
+Add New User->rabbitmqctl add_user test test
+Set User Tag->rabbitmqctl set_user_tags test administrator
+Set User Permission(Read&Write)->rabbitmqctl set_permissions -p / test ".*" ".*" ".*"
